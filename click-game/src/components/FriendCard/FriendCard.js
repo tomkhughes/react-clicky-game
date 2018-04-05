@@ -2,7 +2,10 @@ import React from "react";
 import "./FriendCard.css";
 
 const FriendCard = props => (
-  <div onClick={() => props.removeFriend(props.id)} className="card">
+  <div onClick={() => props.removeFriend(props.id)}>
+  <div 
+  onClick={() => props.scoreCount(props.id)} 
+  className="card">
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
@@ -19,6 +22,7 @@ const FriendCard = props => (
         </li>
       </ul>
     </div>
+  </div>
   </div>
 );
 
