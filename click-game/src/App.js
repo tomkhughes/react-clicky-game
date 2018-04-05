@@ -26,9 +26,6 @@ onClick(e) {
 
 
 scoreCount = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
     this.setState({ count: this.state.count + 1 });
   };
   removeFriend = id => {
